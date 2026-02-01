@@ -23,11 +23,11 @@ export function Logo() {
   }, []);
 
   return (
-    <svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-8 w-auto">
+    <svg width="300" height="80" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-12 w-auto">
       {isDark ? (
         <>
           {/* Dark Mode - Indigo Braces */}
-          <text x="10" y="42" fill="#6366F1" style={{ fontFamily: "'Fira Code', monospace", fontSize: '40px', fontWeight: 500 }}>{'{'}</text>
+          <text x="15" y="42" fill="#6366F1" style={{ fontFamily: "'Fira Code', monospace", fontSize: '40px', fontWeight: 500 }}>{'{'}</text>
           
           {/* Name in Monospace Silver */}
           <text x="45" y="40" fill="#F8FAFC" style={{ fontFamily: "'Fira Code', monospace", fontSize: '32px', fontWeight: 400, letterSpacing: '0px' }}>Chandra</text>
@@ -38,7 +38,7 @@ export function Logo() {
       ) : (
         <>
           {/* Light Mode - Coral Braces */}
-          <text x="10" y="42" fill="var(--color-coral-500)" style={{ fontFamily: "'Fira Code', monospace", fontSize: '40px', fontWeight: 500 }}>{'{'}</text>
+          <text x="15" y="42" fill="var(--color-coral-500)" style={{ fontFamily: "'Fira Code', monospace", fontSize: '40px', fontWeight: 500 }}>{'{'}</text>
           
           {/* Name in Slate Grey/Black */}
           <text x="45" y="40" fill="#0F172A" style={{ fontFamily: "'Fira Code', monospace", fontSize: '32px', fontWeight: 400, letterSpacing: '0px' }}>Chandra</text>
