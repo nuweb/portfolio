@@ -51,15 +51,16 @@ export function Skills() {
           A comprehensive toolkit built over 15+ years of software development
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skillCategories.map((category) => {
+          {skillCategories.map((category, index) => {
             const colors = colorClasses[category.color as keyof typeof colorClasses];
             return (
               <div
                 key={category.title}
-                className="bg-white dark:bg-warm-800 p-6 rounded-2xl shadow-lg border border-primary-100 dark:border-warm-700 hover:shadow-xl transition-shadow"
+                className="bg-white dark:bg-warm-800 p-6 rounded-2xl shadow-lg border border-primary-100 dark:border-warm-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div
-                  className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center text-2xl mb-4`}
+                  className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform`}
                 >
                   {category.icon}
                 </div>
@@ -70,7 +71,7 @@ export function Skills() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className={`px-3 py-1 ${colors.badge} rounded-full text-sm font-medium`}
+                      className={`px-3 py-1 ${colors.badge} rounded-full text-sm font-medium hover:scale-105 transition-transform cursor-default`}
                     >
                       {skill}
                     </span>
