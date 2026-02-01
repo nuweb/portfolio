@@ -44,35 +44,71 @@ body {
 .delay-400 { animation-delay: 400ms; }
 
 @theme {
-  /* Primary - Warm Amber/Orange */
-  --color-primary-50: #fffbeb;
-  --color-primary-100: #fef3c7;
-  --color-primary-200: #fde68a;
-  --color-primary-300: #fcd34d;
-  --color-primary-400: #fbbf24;
-  --color-primary-500: #f59e0b;
-  --color-primary-600: #d97706;
-  --color-primary-700: #b45309;
-  --color-primary-800: #92400e;
-  --color-primary-900: #78350f;
-  --color-primary-950: #451a03;
+  /* Light Mode Primary - Coral/Red (warm) */
+  --color-coral-50: #fff5f5;
+  --color-coral-100: #ffe3e3;
+  --color-coral-200: #ffc9c9;
+  --color-coral-300: #ffa8a8;
+  --color-coral-400: #ff8787;
+  --color-coral-500: #ff6b6b;
+  --color-coral-600: #fa5252;
+  --color-coral-700: #f03e3e;
+  --color-coral-800: #e03131;
+  --color-coral-900: #c92a2a;
 
-  /* Accent - Warm Rose/Coral */
-  --color-accent-300: #fda4af;
-  --color-accent-400: #fb7185;
-  --color-accent-500: #f43f5e;
-  --color-accent-600: #e11d48;
+  /* Dark Mode Primary - Purple/Violet */
+  --color-violet-50: #f5f3ff;
+  --color-violet-100: #ede9fe;
+  --color-violet-200: #ddd6fe;
+  --color-violet-300: #c4b5fd;
+  --color-violet-400: #a78bfa;
+  --color-violet-500: #8b5cf6;
+  --color-violet-600: #7c3aed;
+  --color-violet-700: #6d28d9;
+  --color-violet-800: #5b21b6;
+  --color-violet-900: #4c1d95;
 
-  /* Secondary - Warm Brown/Terracotta */
+  /* Warm neutrals for light mode */
+  --color-warm-50: #faf9f7;
+  --color-warm-100: #f5f3f0;
+  --color-warm-200: #e8e6e1;
+  --color-warm-300: #d3d0c9;
   --color-warm-400: #a8a29e;
   --color-warm-500: #78716c;
   --color-warm-600: #57534e;
   --color-warm-700: #44403c;
   --color-warm-800: #292524;
   --color-warm-900: #1c1917;
+
+  /* Cool/Blue neutrals for dark mode */
+  --color-navy-50: #f0f4f8;
+  --color-navy-100: #d9e2ec;
+  --color-navy-200: #bcccdc;
+  --color-navy-300: #9fb3c8;
+  --color-navy-400: #829ab1;
+  --color-navy-500: #627d98;
+  --color-navy-600: #486581;
+  --color-navy-700: #334e68;
+  --color-navy-800: #243b53;
+  --color-navy-900: #102a43;
+  --color-navy-950: #0a1929;
 }
 
 /* Dark mode base styles */
 .dark {
   color-scheme: dark;
+}
+
+/* Safe area for mobile bottom navigation */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }

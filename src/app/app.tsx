@@ -1,26 +1,17 @@
-import {
-  Header,
-  Hero,
-  Skills,
-  Experience,
-  Education,
-  Awards,
-  Contact,
-} from './components';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { AboutPage, ProjectsPage, ExperiencePage, ContactPage } from './pages';
 
 export function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-warm-900 transition-colors">
-      <Header />
-      <main>
-        <Hero />
-        <Skills />
-        <Experience />
-        <Education />
-        <Awards />
-        <Contact />
-      </main>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Route>
+    </Routes>
   );
 }
 
