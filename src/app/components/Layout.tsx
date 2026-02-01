@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { ThemeToggle } from './ThemeToggle';
+import { Logo } from './Logo';
 
 const navItems = [
   {
@@ -61,8 +62,8 @@ export function Layout() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-warm-50/80 dark:bg-navy-950/80 backdrop-blur-sm border-b border-warm-200 dark:border-navy-800">
         <nav className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
-          <NavLink to="/" className="text-xl font-bold text-warm-900 dark:text-white">
-            CV.
+          <NavLink to="/" className="flex items-center">
+            <Logo />
           </NavLink>
           
           {/* Desktop Navigation */}
