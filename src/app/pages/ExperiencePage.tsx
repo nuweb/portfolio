@@ -94,8 +94,6 @@ export function ExperiencePage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column - Skills */}
         <div className="lg:col-span-1">
           {/* Technical Skills */}
