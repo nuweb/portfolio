@@ -10,11 +10,11 @@ export function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission - could integrate with a service like Formspree
-    window.location.href = `mailto:contact@veeracs.info?subject=Contact from ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:veeracs@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
   };
 
   return (
-    <section className="min-h-screen px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
+    <section className="min-h-screen mt-8 px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-warm-900 dark:text-white mb-2">Get in Touch</h1>
@@ -25,9 +25,9 @@ export function ContactPage() {
 
       <div className="max-w-2xl mx-auto">
         {/* Quick Contact Buttons */}
-        <div className="grid grid-cols-2 gap-4 mb-8">
+        <div className="grid grid-cols-1 gap-4 mb-8">
         <a
-          href="mailto:contact@veeracs.info"
+          href="mailto:veeracs@gmail.com"
           className="flex flex-col items-center gap-2 p-6 bg-white dark:bg-navy-900 rounded-2xl border border-warm-200 dark:border-navy-700 hover:border-coral-300 dark:hover:border-violet-600 transition-colors"
         >
           <div className="w-12 h-12 flex items-center justify-center bg-coral-100 dark:bg-violet-900/30 rounded-xl">
@@ -36,18 +36,6 @@ export function ContactPage() {
             </svg>
           </div>
           <span className="text-sm font-medium text-warm-700 dark:text-navy-200">Email Me</span>
-        </a>
-
-        <a
-          href="tel:+1234567890"
-          className="flex flex-col items-center gap-2 p-6 bg-white dark:bg-navy-900 rounded-2xl border border-warm-200 dark:border-navy-700 hover:border-coral-300 dark:hover:border-violet-600 transition-colors"
-        >
-          <div className="w-12 h-12 flex items-center justify-center bg-violet-100 dark:bg-violet-900/30 rounded-xl">
-            <svg className="w-6 h-6 text-violet-500 dark:text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-            </svg>
-          </div>
-          <span className="text-sm font-medium text-warm-700 dark:text-navy-200">Call</span>
         </a>
       </div>
 

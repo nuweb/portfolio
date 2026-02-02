@@ -34,7 +34,7 @@ export function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState('All Work');
 
   return (
-    <section className="min-h-screen px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
+    <section className="min-h-screen mt-8 px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-2xl md:text-3xl font-bold text-warm-900 dark:text-white">Featured Projects</h1>

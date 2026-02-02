@@ -4,14 +4,8 @@ const skills = ['REACT', 'TYPESCRIPT', 'NODE.JS', 'AWS', 'MODULE FEDERATION'];
 
 export function AboutPage() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-start px-6 py-20 bg-warm-50 dark:bg-navy-950">
+    <section className="min-h-screen mt-8 flex flex-col items-center justify-start px-6 py-20 bg-warm-50 dark:bg-navy-950">
       <div className="max-w-2xl text-center">
-        {/* Availability Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded-full text-sm font-medium mb-8">
-          <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-          Available for new opportunities
-        </div>
-
         {/* Name */}
         <h1 className="text-5xl md:text-6xl font-bold text-warm-900 dark:text-white mb-2">
           Chandra Sekhar

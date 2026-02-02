@@ -75,7 +75,7 @@ const awards = [
 
 export function ExperiencePage() {
   return (
-    <section className="min-h-screen px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
+    <section className="min-h-screen mt-8 px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
