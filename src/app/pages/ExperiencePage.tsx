@@ -68,7 +68,7 @@ const awards = [
   },
   {
     title: 'Toshiba Scholarship',
-    description: '2012–2013 • MISSOURI S&T',
+    description: 'MISSOURI UNIVERSITY OF SCIENCE AND TECHNOLOGY',
     icon: '🎖️',
   },
 ];
@@ -82,15 +82,6 @@ export function ExperiencePage() {
           <h1 className="text-2xl md:text-3xl font-bold text-warm-900 dark:text-white">Experience</h1>
           <p className="text-warm-500 dark:text-navy-400 text-sm">15+ Years in Frontend Engineering</p>
         </div>
-        <a
-          href="/Chandra_Resume.pdf"
-          download
-          className="p-3 bg-warm-200 dark:bg-navy-800 rounded-xl text-warm-600 dark:text-navy-300 hover:bg-warm-300 dark:hover:bg-navy-700 transition-colors"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-        </a>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

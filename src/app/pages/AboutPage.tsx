@@ -7,10 +7,10 @@ export function AboutPage() {
     <section className="min-h-screen mt-2 md:mt-6 flex flex-col items-center justify-start px-6 py-20 bg-warm-50 dark:bg-navy-950">
       <div className="max-w-2xl text-center">
         {/* Name */}
-        <h1 className="text-5xl md:text-6xl font-bold text-warm-900 dark:text-white mb-2">
+        <h1 className="text-3xl md:text-4xl font-bold text-warm-900 dark:text-white mb-2">
           Chandra Sekhar
         </h1>
-        <h1 className="text-5xl md:text-6xl font-bold text-coral-500 dark:text-violet-400 mb-6">
+        <h1 className="text-3xl md:text-4xl font-bold text-coral-500 dark:text-violet-400 mb-6">
           Veera
         </h1>
 
@@ -29,20 +29,11 @@ export function AboutPage() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col gap-4 mb-12">
-          <Link
-            to="/projects"
-            className="w-full px-8 py-4 bg-coral-500 hover:bg-coral-600 dark:bg-violet-500 dark:hover:bg-violet-600 text-white rounded-2xl font-medium transition-all flex items-center justify-center gap-2 shadow-lg shadow-coral-500/25 dark:shadow-violet-500/25"
-          >
-            View Projects
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </Link>
+        <div className="flex flex-col gap-4 mb-12 items-center">
           <a
             href="/Chandra_Resume.pdf"
             download
-            className="w-full px-8 py-4 bg-warm-200 dark:bg-navy-800 hover:bg-warm-300 dark:hover:bg-navy-700 text-warm-700 dark:text-navy-200 rounded-2xl font-medium transition-all flex items-center justify-center gap-2"
+            className="w-64 px-8 py-4 bg-coral-500 dark:bg-navy-800 hover:bg-coral-600 dark:hover:bg-navy-700 text-white dark:text-navy-200 rounded-2xl font-medium transition-all flex items-center justify-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -61,11 +52,6 @@ export function AboutPage() {
               {skill}
             </span>
           ))}
-          <button className="text-warm-400 hover:text-warm-600 dark:hover:text-navy-200">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
         </div>
 
         {/* Social Links */}

@@ -13,6 +13,7 @@ const navItems = [
       </svg>
     ),
   },
+  /*
   {
     to: '/projects',
     label: 'Projects',
@@ -22,6 +23,7 @@ const navItems = [
       </svg>
     ),
   },
+  */
   {
     to: '/experience',
     label: 'Experience',
