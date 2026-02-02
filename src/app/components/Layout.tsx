@@ -58,7 +58,7 @@ export function Layout() {
   };
 
   return (
-    <div className="min-h-screen mt-8 bg-warm-50 dark:bg-navy-950 transition-colors">
+    <div className="min-h-screen mt-2 md:mt-6 bg-warm-50 dark:bg-navy-950 transition-colors">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-warm-50/80 dark:bg-navy-950/80 backdrop-blur-sm border-b border-warm-200 dark:border-navy-800">
         <nav className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">

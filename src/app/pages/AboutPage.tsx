@@ -4,7 +4,7 @@ const skills = ['REACT', 'TYPESCRIPT', 'NODE.JS', 'AWS', 'MODULE FEDERATION'];
 
 export function AboutPage() {
   return (
-    <section className="min-h-screen mt-8 flex flex-col items-center justify-start px-6 py-20 bg-warm-50 dark:bg-navy-950">
+    <section className="min-h-screen mt-2 md:mt-6 flex flex-col items-center justify-start px-6 py-20 bg-warm-50 dark:bg-navy-950">
       <div className="max-w-2xl text-center">
         {/* Name */}
         <h1 className="text-5xl md:text-6xl font-bold text-warm-900 dark:text-white mb-2">
@@ -99,11 +99,6 @@ export function AboutPage() {
             </svg>
           </a>
         </div>
-
-        {/* Location */}
-        <p className="text-sm text-warm-400 dark:text-navy-500 uppercase tracking-wider">
-          Based in the United States
-        </p>
       </div>
     </section>
   );

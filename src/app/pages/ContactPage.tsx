@@ -14,7 +14,7 @@ export function ContactPage() {
   };
 
   return (
-    <section className="min-h-screen mt-8 px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
+    <section className="min-h-screen mt-2 md:mt-6 px-6 py-8 pb-24 md:pb-8 bg-warm-50 dark:bg-navy-950">
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-warm-900 dark:text-white mb-2">Get in Touch</h1>
