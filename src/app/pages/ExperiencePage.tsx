@@ -5,12 +5,36 @@ const skillCategories = [
   },
   {
     title: 'FRAMEWORKS & LIBRARIES',
-    skills: ['React', 'Angular', 'Redux', 'NextJS', 'NodeJS'],
+    skills: ['React', 'Angular', 'Redux', 'NestJS', 'NodeJS', 'ExpressJS'],
     highlight: true,
   },
   {
-    title: 'TOOLS & ENVIRONMENTS',
-    skills: ['AWS', 'Figma', 'Webpack', 'Jest', 'Storybook'],
+    title: 'DATABASES',
+    skills: ['MySQL', 'PostgreSQL', 'Redis'],
+  },
+  {
+    title: 'RUNTIMES',
+    skills: ['Node.js', 'PHP', 'Java'],
+  },
+  {
+    title: 'TESTING',
+    skills: ['Jest', 'Ava', 'Storybook/Loki', 'Cypress', 'Chai', 'Mocha'],
+  },
+  {
+    title: 'VERSION CONTROL',
+    skills: ['Git', 'GitHub', 'GitLab'],
+  },
+  {
+    title: 'BUILD TOOLS',
+    skills: ['Webpack', 'Vite'],
+  },
+  {
+    title: 'PACKAGE MANAGERS',
+    skills: ['npm', 'yarn', 'pnpm'],
+  },
+  {
+    title: 'CLOUD',
+    skills: ['AWS', 'Azure'],
   },
 ];
 
@@ -18,34 +42,49 @@ const workHistory = [
   {
     title: 'Senior Front End Engineer',
     company: 'WorkBoard AI',
-    period: '2022 – 2026',
+    period: 'Jan 2022 – Jan 2026',
     highlights: [
-      'Architected micro-frontend architecture using Module Federation.',
-      'Led design & development of navigation used by 100K+ users.',
-      'Developed a Gen AI chat UI prototype for internal hackathon.',
+      'Architected micro-frontend architecture using Module Federation',
+      'Led design & development of navigation used by 100K+ users',
+      'Drove accessibility compliance for the main navigation',
+      'Built REST APIs with NestJS/NodeJS to consume legacy MySQL data',
+      'Developed a Gen AI chat UI prototype for internal hackathon',
     ],
-    techStack: 'React, Redux, NextJS, NodeJS, MySQL, TypeScript',
-    current: true,
+    techStack: 'React, Redux, React Query, React Router, NestJS, NodeJS, MySQL, TypeScript, Webpack, Figma, Cypress, Storybook',
+    current: false,
   },
   {
     title: 'Lead Front End Engineer',
     company: 'Oracle',
-    period: '2017 – 2022',
+    period: 'Aug 2017 – Jan 2022',
     highlights: [
-      'Led migration of legacy AngularJS application to Angular 5 and React.',
-      'Developed a component library improving developer velocity across teams.',
+      'Led migration of legacy AngularJS application to Angular 5 and React',
+      'Contributed to the React core team with accessible widgets and reusable UI components',
+      'Developed a component library improving developer velocity across teams',
     ],
-    techStack: 'Angular, React, Mocha, Storybook, Java',
+    techStack: 'Angular, React, Mocha, Chai, Jest, Ava, Storybook/Loki, Java',
+  },
+  {
+    title: 'Senior Software Consultant',
+    company: 'Northrop Grumman',
+    period: 'Feb 2017 – Aug 2017',
+    highlights: [
+      'Contributed to Disability Case Processing System for the Social Security Administration'
+    ],
+    techStack: 'React, Flux, Node.js, PostgreSQL',
   },
   {
     title: 'Principal Architect',
     company: 'Fusion Media Group',
-    period: '2015 – 2017',
+    period: 'Nov 2015 – Jan 2017',
     highlights: [
-      'Led full-stack development using modern JS tooling.',
-      'Improved API performance with Redis/AWS ElastiCache.',
+      'Led full-stack development using modern JS tooling',
+      'Set up Universal React seed projects, build pipelines, and performance optimizations',
+      'Improved API performance with Redis/AWS ElastiCache',
+      'Mentored a team of React developers; established UI development best practices',
+      'Built D3.js-based analytics dashboards and lazy-loading ad components',
     ],
-    techStack: 'React, Node.js, Redis, AWS',
+    techStack: 'ExpressJS, React, Redux, Webpack, WordPress, Jenkins, AWS, Node.js, Redis, Nginx',
   },
 ];
 
@@ -63,12 +102,12 @@ const education = [
 const awards = [
   {
     title: "People's Choice Award",
-    description: 'INTERNAL HACKATHON, CONDÉ NAST',
+    description: 'Internal Hackathon, Condé Nast',
     icon: '🏆',
   },
   {
     title: 'Toshiba Scholarship',
-    description: 'MISSOURI UNIVERSITY OF SCIENCE AND TECHNOLOGY',
+    description: 'Missouri University of Science and Technology',
     icon: '🎖️',
   },
 ];

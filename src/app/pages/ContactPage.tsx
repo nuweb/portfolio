@@ -9,8 +9,10 @@ export function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission - could integrate with a service like Formspree
-    window.location.href = `mailto:veeracs@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
+    const body = `From: ${formData.name} (${formData.email})
+
+${formData.message}`;
+    window.location.href = `mailto:veeracs@gmail.com?subject=Contact from ${formData.name}&body=${encodeURIComponent(body)}`;
   };
 
   return (
