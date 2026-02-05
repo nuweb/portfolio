@@ -5,7 +5,7 @@ const skillCategories = [
   },
   {
     title: 'FRAMEWORKS & LIBRARIES',
-    skills: ['React', 'Angular', 'Redux', 'NestJS', 'NodeJS', 'ExpressJS'],
+    skills: ['React', 'Angular', 'Redux', 'NestJS', 'ExpressJS'],
     highlight: true,
   },
   {
