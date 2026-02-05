@@ -64,7 +64,27 @@ export function Layout() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-warm-50/80 dark:bg-navy-950/80 backdrop-blur-sm border-b border-warm-200 dark:border-navy-800">
         <nav className="max-w-[1200px] mx-auto px-6 py-4 flex items-center justify-between">
-          <NavLink to="/" className="flex items-center">
+          {/* Mobile Menu Button - Left side for thumb accessibility */}
+          <div className="flex items-center gap-4 md:hidden">
+            <button
+              className="p-2 text-warm-600 dark:text-navy-300"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+            >
+              {isMobileMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* Logo - Center on mobile, left on desktop */}
+          <NavLink to="/" className="flex items-center md:order-first">
             <Logo />
           </NavLink>
           
@@ -88,24 +108,9 @@ export function Layout() {
             <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-4 md:hidden">
+          {/* Mobile Theme Toggle - Right side */}
+          <div className="flex items-center md:hidden">
             <ThemeToggle />
-            <button 
-              className="p-2 text-warm-600 dark:text-navy-300"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
-            >
-              {isMobileMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
           </div>
         </nav>
 
