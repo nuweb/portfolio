@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const skills = ['REACT', 'TYPESCRIPT', 'NODE.JS', 'AWS', 'MODULE FEDERATION'];
+const skills = ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'TypeScript', 'React', 'Redux', 'Webpack', 'NodeJS', 'Module Federation'];
 
 export function AboutPage() {
   return (
@@ -20,12 +20,12 @@ export function AboutPage() {
         </p>
 
         {/* Description */}
-        <p className="text-warm-500 dark:text-navy-400 mb-10 leading-relaxed">
-          Over 15+ years of experience architecting scalable, performant, and accessible web
-          applications. Specialized in{' '}
-          <span className="text-coral-600 dark:text-violet-400 font-medium">React</span>,{' '}
-          <span className="text-coral-600 dark:text-violet-400 font-medium">Micro-frontends</span>,
-          and driving engineering initiatives at scale.
+        <p className="text-sm text-warm-500 dark:text-navy-400 mb-10 leading-relaxed">
+          Senior Front-End Engineer with 15+ years building web applications at{' '}
+          <span className="text-coral-600 dark:text-violet-400 font-medium">Oracle</span>,{' '}
+          <span className="text-coral-600 dark:text-violet-400 font-medium">Condé Nast</span>, and
+          high-growth startups. Architected micro-frontend systems serving 100K+ users, led
+          framework migrations, and built component libraries that accelerated team velocity.
         </p>
 
         {/* CTA Buttons */}
